@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: fastsell
+
+  datasource:
+    url: jdbc:postgresql://ep-weathered-tooth-adt3jklb-pooler.c-2.us-east-1.aws.neon.tech:5432/neondb?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_wti9WQ6gSDaY
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # cria/atualiza tabelas automaticamente
+    show-sql: true # mostra SQL no console
+
+server:
+  port: 8080
